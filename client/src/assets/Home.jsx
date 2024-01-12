@@ -27,8 +27,8 @@ const Home = () => {
             <h4>{user.name}</h4>
             <p>{user.email}</p>
             <div className="btn">
-              <button onClick={() => handleDelete(user._id)}>Delete</button>
-              <Link to={`/update-user/${user._id}`}>Update</Link>
+              <button className="delete" onClick={() => handleDelete(user._id)}>Delete</button>
+              <Link className="update" to={`/update-user/${user._id}`}>Update</Link>
             </div>
           </div>
         ))}

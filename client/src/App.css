@@ -1,6 +1,7 @@
 body {
   max-width: 1280px;
   margin: 0 auto;
+  background-color: rgb(191, 202, 202);
 }
 
 nav {
@@ -8,8 +9,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 20px;
+  border-bottom: 3px solid #0b0b0b;
+  font-size: 30px;
+  font-style:italic;
 }
 
 a {
@@ -23,26 +25,31 @@ a {
 input{
     display: block;
     margin-bottom: 12px;
-    padding: 8px;
-    width: 30%;
+    padding: 12px;
+    width: 40%;
 }
 
 input[type='submit']{
     background: rgb(21,90,253);
     border:none;
     outline: none;
-    width: 15%;
+    width: 20%;
     font-weight: 500;
     font-size: 14px;
     color: white;
     border-radius: 5px;
     padding: 10px 5px;
+    margin-left: 120px;
+}
+
+input[type='submit']:hover{
+  background-color: rgb(5, 5, 166);
 }
 
 .user-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .cards{
@@ -52,16 +59,48 @@ input[type='submit']{
     padding: 5px;
     cursor: pointer;
     margin-bottom: 100px;
+    
 }
 
 .cards img{
     width: 100%;
     height: 100%;
     border-radius: 8px;
+    outline: auto;
 
 }
 
 .btn{
     display: flex;
     justify-content: space-between;
+
 }
+
+.delete{
+  background-color: rgb(46, 113, 237);
+  color: white;
+  padding: 2px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete:hover {
+  background-color: blue;
+}
+
+.update {
+
+  background-color: rgb(46, 113, 237);
+  color: white;
+  padding: 2px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: auto black;
+}
+
+.update:hover {
+  background-color: blue;
+}
+

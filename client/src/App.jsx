@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <nav>
-        <a href="/">Logo</a>
-        <Link to={"/create-user"}>Add new user</Link>
+        <a href="/">Home</a>
+        <Link to={"/create-user"}>Add New User</Link>
       </nav>
       <Outlet />
     </>
